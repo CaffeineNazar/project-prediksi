@@ -34,5 +34,10 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    
+    'ml_api' => [
+        'url' => env('ML_API_URL', 'http://localhost:5000'),
+        'timeout' => env('ML_API_TIMEOUT', 30),
+    ],
 
 ];
